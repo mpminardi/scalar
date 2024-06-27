@@ -23,7 +23,7 @@ export const ApiReferenceReact = (props: ReferenceProps) => {
   > | null>(null)
 
   useEffect(() => {
-    if (!el.current) return reference?.unmount
+    if (!el.current) return
 
     const instance = createScalarReferences(
       el.current,
